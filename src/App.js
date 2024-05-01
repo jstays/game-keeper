@@ -1,18 +1,22 @@
 import './App.css';
+import { Container } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
+import { NavDropdown } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header>
-
-      </header>
-      <main>
-
-      </main>
-      <footer>
-        
-      </footer>
-    </div>
+    <Container className='App'>
+      <Navbar expand='lg' className='nav-bg'>
+        <Container>
+          <Navbar.Brand href='#home'>
+            <img
+              src="./game-keeper-logo.png"
+            />
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+    </Container>
   );
 }
 
